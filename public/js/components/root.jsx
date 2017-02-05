@@ -23,7 +23,7 @@ define([
                 username: $("#username").val(),
                 email: $("#email").val(),
             }
-            this.post("/", params)
+            this.post("/public/register.php", params)
         },
         post: function(path, params, method) {
             method = method || "post"; // Set method to post by default if not specified.

@@ -16,7 +16,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 		<script src="/js/bower_components/requirejs/require.js"></script>
 		<script type="text/javascript">
-			require(['js/config'], function() {
+			require(['/js/config.js'], function() {
 				require(['init']);
 			})
 		</script>

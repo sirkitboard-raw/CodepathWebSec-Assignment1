@@ -13,12 +13,16 @@
 use Illuminate\Http\Request;
 use App\ValidationFunctions;
 
-Route::get('/', function () {
+Route::get('public/register.php', function () {
     $data = ["values" => [], "errors" => []];
     return view('welcome', compact('data'));
 });
 
-Route::post('/', function (Request $request) {
+Route::get('public/registration_success.php', function () {
+    return view('success');
+});
+
+Route::post('public/register.php', function (Request $request) {
     $validationErrors = [];
     // dd($request->all());
     if(ValidationFunctions::validateFirstName($request->input('first_name')) === false) {
@@ -55,7 +59,7 @@ Route::post('/', function (Request $request) {
             'username' => $request->input('username'),
             'email' => $request->input('email')
         ]);
-        return view('success');
+        return redirect('public/registration_success.php');
     }
 
     $data = [
