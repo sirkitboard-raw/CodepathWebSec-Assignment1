@@ -1,0 +1,23 @@
+{
+  "name": "prework",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.3",
+    "backbone": "~1.2.3",
+    "requirejs": "~2.1.20",
+    "react": "~0.14",
+    "jsx-requirejs-plugin": "~0.6.0",
+    "bootstrap": "~3.3.5",
+    "eventEmitter": "~4.2.11"  
+  }
+}

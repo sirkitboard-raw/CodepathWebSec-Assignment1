@@ -1,0 +1,29 @@
+body {
+	background: #CCCCFF;
+}
+
+#content {
+	.container {
+		background: #fff;
+		width: 40%;
+		min-width: 500px;
+		// height: 500px;
+		margin: auto;
+		padding: 20px;
+        .row {
+            margin: 0;
+        }
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	#input-custom-percent {
+		display:none;
+	}
+
+    label::after {
+        font-size: 12px;
+    }
+}

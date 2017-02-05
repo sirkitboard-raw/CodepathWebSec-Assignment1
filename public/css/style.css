@@ -1,0 +1,19 @@
+body {
+  background: #CCCCFF; }
+
+#content .container {
+  background: #fff;
+  width: 40%;
+  min-width: 500px;
+  margin: auto;
+  padding: 20px; }
+  #content .container .row {
+    margin: 0; }
+#content h2 {
+  text-align: center; }
+#content #input-custom-percent {
+  display: none; }
+#content label::after {
+  font-size: 12px; }
+
+/*# sourceMappingURL=style.css.map */
